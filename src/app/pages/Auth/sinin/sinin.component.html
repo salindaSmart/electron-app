@@ -1,0 +1,68 @@
+
+<div class="d-flex container-fluid">
+   <div class="col-3 d-inline ">
+       <div class="d-flex justify-content-center ">
+           <div>
+               <div class="d-flex justify-content-center">
+                    <div >
+                        <img src="https://png.pngtree.com/element_pic/00/16/07/115783931601b5c.jpg" width="50px" height="50px"/>
+                    </div>
+               </div>
+                <div class="text-center" >
+                    <label class="title">SMARTTIMES</label>
+                    <h3 class="pt-3">Welcome Back !</h3>
+                    <h6 >sing in to continue to Smart POS</h6>
+                </div>
+           </div>
+        </div>
+        <div class="d-flex justify-content-center">
+            <form (ngSubmit)="onSubmit()">
+                <div class="d-flex justify-content-center">
+                    <div>
+                                <div class="input-group input-group-sm mb-3">
+                                        <div class="input-group-prepend">
+                                            <i class="fas fa-user px-2 pr-3" style="font-size: 28px;"></i>
+                                        </div>
+                                        <div style="height: fit-content;">
+                                            <label for="username" class="d-flex d-block pt-1">User name</label>
+                                            <input type="text" class="form-control d-flex d-block ng-valid" aria-label="Small" aria-describedby="inputGroup-sizing-sm" [(ngModel)]="username" name="username" id="username" class="name">
+                                        </div>
+                                </div>
+                                <div class="input-group input-group-sm mb-3">
+                                        <div class="input-group-prepend">
+                                            <i class="fas fa-lock px-2 pr-3" style="font-size: 28px;"></i>
+                                        </div>
+                                        <div style="height: fit-content;">
+                                            <label for="password" class="d-flex d-block pt-1">Password</label>
+                                            <input type="password" class="form-control d-flex d-block ng-valid" aria-label="Small" aria-describedby="inputGroup-sizing-sm" [(ngModel)]="password" name="password" id="password" class="name">
+                                        </div>
+                                </div>
+                                <div class="custom-control custom-checkbox pl-4">
+                                        <input type="checkbox" class="custom-control-input" id="customCheck1">
+                                        <label class="custom-control-label" for="customCheck1">Remember me</label>
+                                </div>
+                                <div class="d-flex justify-content-center pt-4">
+                                        <button type="submit" class="btn btn-danger"  >Login</button>
+                                </div>
+                                
+                                <div class="d-flex  justify-content-center">
+                                    <div>
+                                        <div class="d-flex justify-content-center pt-3">
+                                            <label class="forgot-label"><a href="/forgotpassword">Forgot your Password</a></label>
+                                        </div>
+                                        <div class="d-flex justify-content-center pt-3">
+                                            <label class="forgot-label">Don't have an account?<a href="/register">Register</a></label>
+                                        </div>
+                                    </div>
+                                </div>     
+                    </div>
+
+                </div>
+            </form>
+        </div>
+
+   </div>
+   <div class="col-9 d-inline">
+    <img class="logImg" src="https://images.unsplash.com/photo-1509017174183-0b7e0278f1ec?ixid=MXwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHw%3D&ixlib=rb-1.2.1&auto=format&fit=crop&w=751&q=80"  width="100%"/>
+   </div>
+</div>

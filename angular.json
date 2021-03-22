@@ -1,5 +1,8 @@
 {
   "$schema": "./node_modules/@angular/cli/lib/config/schema.json",
+  "cli": {
+    "analytics": "c8ae52f5-63bb-4128-9075-06787b484d09"
+  },
   "version": 1,
   "newProjectRoot": "projects",
   "projects": {
@@ -110,6 +113,9 @@
             "karmaConfig": "src/karma.conf.js",
             "scripts": [],
             "styles": [
+              {
+                "input": "node_modules/@angular/material/prebuilt-themes/indigo-pink.css"
+              },
               "src/styles.scss"
             ],
             "assets": [
