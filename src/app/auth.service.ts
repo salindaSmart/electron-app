@@ -1,6 +1,6 @@
 import { Injectable } from '@angular/core';
 import { HttpClient } from '@angular/common/http';
-
+import {AppConfig} from '../environments/environment'
 
 @Injectable({
   providedIn: 'root'
@@ -22,6 +22,6 @@ export class AuthService {
   }
 
   public validate(email, password) {
-    return this.http.post('/api/authenticate', {'username' : email, 'password' : password}).toPromise()
+    return this.http.post(AppConfig.url + 'api/login', {'email' : email, 'password' : password}).toPromise()
   }
 }

@@ -1,4 +1,5 @@
 export const AppConfig = {
   production: true,
-  environment: 'PROD'
+  environment: 'PROD',
+  url : 'http://localhost:8000/index.php/'
 };

@@ -10,6 +10,7 @@ import { AuthService } from '../../../auth.service';
 export class SininComponent implements OnInit {
 private username;
 private password;
+private error:boolean =false;
   constructor(private authService : AuthService, private router : Router) { }
 
   ngOnInit(): void {
@@ -17,8 +18,13 @@ private password;
   onSubmit(){
     this.authService.validate(this.username, this.password)
     .then((response) => {
-      this.authService.setUserInfo({'user' : response['user']});
-      this.router.navigate(['home']);
+      if(response['user']){
+        this.authService.setUserInfo({'user' : response['user']});
+        this.router.navigate(['home']);
+      }
+      else{
+        this.error=true;
+      }
 
     })
 }

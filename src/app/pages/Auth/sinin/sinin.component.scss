@@ -23,20 +23,20 @@ font-size: 10px;
   margin: 5px;
 
   .title{
-    font-size: 1.6rem;
+    font-size: 41px;
     padding-top: 0;
     font-weight: 650;
 
   }
   h3{
-    font-size: 1rem;
+    font-size: 27px;
     opacity: 0.7;
     padding: 0px;
     margin: 0px;
     font-weight: 500;
   }
   h6{
-    font-size: 0.7rem;
+    font-size: 14px;
     opacity: 0.7;
     padding: 0px;
     margin: 0px;
@@ -61,8 +61,11 @@ font-size: 10px;
     }
   }
   i{
-    font-size: 28px;
+    font-size: 20px;
     padding-top: 10px;
+  }
+  .label{
+    font-size: 14px;
   }
 }
 .custom-control-label{
@@ -73,7 +76,7 @@ button{
   height: 1.8rem;
   padding-top: 0px;
   opacity: 0.9;
-  background-color: red;
+  background-color: #f30a0a;
 }
 .forgot-label{
   color: black;
